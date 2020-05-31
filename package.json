@@ -1,0 +1,22 @@
+{
+  "name": "back-to-basics-express",
+  "version": "1.0.0",
+  "description": "node, express, graphql, mongo basics and experiments",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilkerkaran/back-to-basics-express.git"
+  },
+  "author": "Ilker Karan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilkerkaran/back-to-basics-express/issues"
+  },
+  "homepage": "https://github.com/ilkerkaran/back-to-basics-express#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
