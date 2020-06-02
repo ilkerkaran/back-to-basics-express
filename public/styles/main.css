@@ -1,8 +1,69 @@
 body {
-width: 80%;
-margin: auto;
-text-align: center;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font: 1em sans-serif;
 }
+
+.main-header {
+
+}
+.main-heaeder-nav {
+display: flex;
+flex-flow: row nowrap;
+justify-content: start;
+background-color: aquamarine;
+}
+
+.main-header-nav-item {
+  order:0;
+  border: solid 1em red;
+}
+.main-header-nav-item a {
+  color: black;
+}
+.main-header-nav-item a:hover,
+.main-header-nav-item a:active,
+.main-header-nav-item a.active{
+  background-color: darkred;
+  color:gold;  
+}
+
+
+
+.card-holder {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.card {
+  order:0;
+  padding: 1em;
+  margin: 1em;
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: start;
+  align-content: center;
+}
+
+
+.card-image {
+  order:3;
+}
+.card-title {
+  order:3;
+  font-size: 2rem;
+  color: darkgray;
+}
+.card-description {
+  order:3;
+  font-size: 1.2rem;
+}
+
 
 
 
