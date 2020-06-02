@@ -5,9 +5,7 @@ body {
   font: 1em sans-serif;
 }
 
-.main-header {
 
-}
 .main-heaeder-nav {
 display: flex;
 flex-flow: row nowrap;
@@ -17,16 +15,21 @@ background-color: aquamarine;
 
 .main-header-nav-item {
   order:0;
-  border: solid 1em red;
+  padding: 1em;
+  cursor: pointer;
+  
 }
-.main-header-nav-item a {
-  color: black;
+.main-header-nav-item a {  
+  font-size: 2rem;
+  color: darkgray;
+  text-decoration: none;
 }
-.main-header-nav-item a:hover,
-.main-header-nav-item a:active,
-.main-header-nav-item a.active{
-  background-color: darkred;
+.main-header-nav-item:hover,
+.main-header-nav-item:active,
+.main-header-nav-item.active{
   color:gold;  
+  background-color:  gold  ;
+  font-weight: bold;
 }
 
 
