@@ -7,10 +7,10 @@ const app = express();
 
 app.use(bodyParser.json()); // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+app.set("view engine", "ejs");
 
 app.use(express.static('public'));
-app.set("view engine", "ejs");
 app.use('/', router);
 
 
-app.listen(5000, () => 'App started on 5000');
+app.listen(5000, () => console.log('App started on 5000'));
