@@ -11,6 +11,7 @@ display: flex;
 flex-flow: row nowrap;
 justify-content: start;
 background-color: aquamarine;
+
 }
 
 .main-header-nav-item {
@@ -67,8 +68,43 @@ background-color: aquamarine;
   font-size: 1.2rem;
 }
 
+.main-container {
+  width: 100%;
+  margin:auto;
+  margin-top: 50px;  
+  align-items: center;
+  border: 1px solid #BFBFBF;
+  box-shadow: 10px 10px 5px #aaaaaa;
 
+}
 
+.form-container {
+  width: 100%;
+  margin:auto;
+  align-items: center;  
+  display :flex;
+  flex-flow: column nowrap;
+}
+.form-container form {
+  width: 50%;
+  display :flex;
+  flex-flow: column nowrap;
+  }
+
+.form-container input {
+order :0;
+justify-content: space-evenly;
+margin-top: 5px;
+margin-bottom : 5px;
+}
+
+.inner-container {
+  border: 1px solid #BFBFBF;
+margin:10px;
+}
+hr.solid {
+  border-top: 3px  #BFBFBF;
+}
 
 @media only screen and (max-width: 600px) {
   body {
