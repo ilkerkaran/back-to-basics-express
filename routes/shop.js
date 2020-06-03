@@ -1,7 +1,7 @@
 const express = require('express');
-
+const productController = require('../controllers/product');
 
 const router = express.Router();
 
-router.get('/', (req, res) => res.send({ message: 'Welcome Shop' }));
+router.get('/', productController.getProducts);
 module.exports = router;
