@@ -1,9 +1,9 @@
 <div class="delete-product-list">
   <h1>Delete Books Here!</h1>
   <div class="inner-container">  
-    <% if(products.length === 0)%>  
+    <% if(products.length === 0) {%>  
     <h2>No Content!</h2></div>
-    <% else {%>
+    <%} else {%>
       <div class="card-container">
 <% for(let i =0; i<products.length; i++) {%>
   <div class = "card">
