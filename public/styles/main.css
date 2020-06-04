@@ -1,16 +1,23 @@
 body {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   text-align: center;
   font: 1em sans-serif;
 }
 
+.main {
+width: 80%;
+margin: auto;
+text-align: center;
+}
+
 
 .main-heaeder-nav {
+  
 display: flex;
 flex-flow: row nowrap;
 justify-content: start;
-background-color: aquamarine;
+background-color: gold;
 
 }
 
@@ -29,8 +36,7 @@ background-color: aquamarine;
 .main-header-nav-item:active,
 .main-header-nav-item.active{
   color:gold;  
-  background-color:  gold  ;
-  font-weight: bold;
+  background-color:  white  ;  
 }
 
 
@@ -47,6 +53,11 @@ background-color: aquamarine;
   order:0;
   padding: 1em;
   margin: 1em;
+  border: 1px solid;
+  border-radius: 2px;
+  border-color: gold;
+  box-shadow: 5px 5px 5px darkgray;
+
   align-items: center;
   display: flex;
   flex-flow: column nowrap;
@@ -54,18 +65,54 @@ background-color: aquamarine;
   align-content: center;
 }
 
+.button {  
+  background-color: white;
+  border: solid;
+  border-color: gold;
+  border-radius: 5px;
+  color: darkgray;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;  
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;  
+}
+
+.button:hover,
+.button:active,
+.button.active{
+  color: white;
+  background-color: gold;
+}
+
+.card-content {
+
+  margin-top: 5px;
+}
+
 
 .card-image {
-  order:3;
+  max-height: 250px;
+  max-width: 150px;
+
 }
 .card-title {
-  order:3;
+
   font-size: 2rem;
   color: darkgray;
 }
+
+.card-author {
+  color: gray;
+  font-style: italic;
+  font-size: 1rem;
+}
 .card-description {
-  order:3;
-  font-size: 1.2rem;
+  color: black;
+
+  font-size: 0.8rem;
 }
 
 .main-container {
@@ -73,7 +120,8 @@ background-color: aquamarine;
   margin:auto;
   margin-top: 50px;  
   align-items: center;
-  border: 1px solid #BFBFBF;
+  border: 1px solid gold;
+  border-radius: 10px;
   box-shadow: 10px 10px 5px #aaaaaa;
 
 }
@@ -92,10 +140,30 @@ background-color: aquamarine;
   }
 
 .form-container input {
+  border: 1px solid;
+  border-color: gold;
+  border-radius: 5px;
 order :0;
 justify-content: space-evenly;
 margin-top: 5px;
 margin-bottom : 5px;
+}
+
+.actions {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+img{
+
+  max-width: 100%;
+
+  max-height: 100%;
+
+  display: block; /* remove extra space below image */
+
 }
 
 .inner-container {
@@ -107,12 +175,12 @@ hr.solid {
 }
 
 @media only screen and (max-width: 600px) {
-  body {
+  .main {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1000px) {
-  body {
+  .main {
     width: 800px;
   }
 }
