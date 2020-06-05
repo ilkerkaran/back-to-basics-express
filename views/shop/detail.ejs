@@ -3,7 +3,14 @@
 <%- include("../includes/head-end.ejs") %>
 <%- include("../includes/header.ejs") %>
 
-<h1>Shop Detail for BookId<%= book.Id%></h1>
+<div class="detail">
 
-
+  <%- include("../includes/book-detail.ejs", {product: product}) %>
+  <div class="card-content actions">  
+    <form action="shop/add-to-cart">
+    <input class="button "type="button" value="Add to Cart!">
+    <input type="hidden" name="id" value="<%= product.id%>">
+    </form>
+  </div>
+</div>
 <%- include("../includes/end.ejs") %> 

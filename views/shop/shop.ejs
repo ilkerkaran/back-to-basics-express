@@ -6,13 +6,7 @@
 <div class = "card-holder">
   <%for (let i = 0; i< products.length;i ++) {const product=  products[i]; %>
   <div class="card">
-    <div class="card-content card-title"><%= product.title%></div>
-    <div class="card-image">
-      <img src="<%= product.coverLink%>" alt="<%= product.title%>">
-    </div>
-    <div class="card-content card-price">£<%= product.price%></div>
-    <div class="card-content card-author"><%= product.author%></div>
-    <div class="card-content card-description"><%= product.desc%></div>
+    <%- include("../includes/book-detail.ejs", {product: product}) %>
     <div class="card-content actions">
       <a href="/shop/<%= product.id %>" class="button">Show Details</a>
       <form action="shop/add-to-cart">
