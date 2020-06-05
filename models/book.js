@@ -54,8 +54,7 @@ module.exports = class Book {
   }
 
   static getBook(id, cb) {
-    const book = INITIAL_BOOKS.find(b => b.id === id);
+    const book = INITIAL_BOOKS.find(b => b.id === +id);
     cb(book);
-
   }
 }

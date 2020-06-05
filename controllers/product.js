@@ -1,6 +1,6 @@
 
 const bookModel = require('../models/book');
-
+const utils = require('./utils');
 module.exports.postAddProduct = (req, res) => res.send({ message: 'should post new product!' });
 
 module.exports.getProducts = (req, res) => bookModel.getBooks((books) => {
@@ -11,8 +11,10 @@ module.exports.getProducts = (req, res) => bookModel.getBooks((books) => {
 
 module.exports.getProduct = (req, res) =>
   bookModel.getBook(req.params.id, (book) => {
-
-    res.render('shop/detail', { siteTitle: "Book Shop!", activeNav: 'shop', product: book });
+    if (book)
+      res.render('shop/detail', { siteTitle: "Book Shop!", activeNav: 'shop', product: book });
+    else
+      utils.render404(res);
   });
 
 

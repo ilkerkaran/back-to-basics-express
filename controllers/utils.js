@@ -1,0 +1,1 @@
+module.exports.render404 = (res) => res.render('error/404', { siteTitle: "Book Shop!", activeNav: '-' });
